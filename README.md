@@ -34,8 +34,8 @@ pip install -r requirements.txt
 import gdown
 
 # Google Drive direct download link
-url = "https://drive.google.com/uc?export=download&id=1SNKfLh7QV2QcvYpUBiLv7oXAqa5rqCfB"
-output = "emotion_model.h5"  # File will be saved with this name
+url = "https://drive.google.com/uc?export=download&id=1SNKfLh7QV2QcvYpUBiLv7oXAqa5rqCfB"   
+output = "emotion_model.h5"    # File will be saved with this name
 gdown.download(url, output, quiet=False)
 
 
@@ -50,11 +50,4 @@ Note: The model file is not included in the repository due to GitHub size limits
 3. Run the main script for real-time emotion detection:
         python main.py
 
-## Project Structure:-
-/EduSense
-│
-├─ main.py             # Main script for real-time emotion detection
-├─ emotion_model.h5    # CNN model file (download separately)
-├─ requirements.txt    # Python dependencies
-└─ README.md           # This file
 
